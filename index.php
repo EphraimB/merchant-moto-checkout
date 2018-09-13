@@ -471,7 +471,6 @@
             $("#cardholder_auth").val("attempted")
             console.log("attempted");
           }
-        }
       },function(fResponse){
       },{
         amount:$("#amount").val()
