@@ -40,7 +40,7 @@
         <h2>Checkout form</h2>
       </div>
         <div class="col-md-8 order-md-1">
-          <form id="billing-form" action="https://paay.transactiongateway.com/api/transact.php" method="get" class="needs-validation" novalidate="">
+          <form id="billing-form" action="threeds.php" method="post" class="needs-validation" novalidate="">
               <input type="hidden" name="orderid" id="orderid" value="2938765" data-threeds="id">
               <input type="hidden" name="username" id="username" value="demo">
               <input type="hidden" name="password" id="password" value="password">
@@ -55,7 +55,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text">$</span>
                     </div>
-                    <input type="text" class="form-control" name="amount" id="amount" value="20.00" data-threeds="amount">
+                    <input type="text" class="form-control" name="amount" id="amount" value="0.18" data-threeds="amount">
                   </div>
                 </div>
                 <div class="col-md-6 mb-3">
@@ -450,7 +450,7 @@
         });
     });*/
 
-    var tds = new ThreeDS("billing-form", "lYEz0fQi35O7hYT4WQt4FRHC717K1JZc",null,{endpoint:"https://sandbox-api.3dsintegrator.com", verbose:true});
+    var tds = new ThreeDS("billing-form", "lYEz0fQi35O7hYT4WQt4FRHC717K1JZc",null,{verbose:true});
 
     $("[data-threeds]").on("change", function() {
       var readyState = 1;
