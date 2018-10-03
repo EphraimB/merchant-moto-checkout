@@ -96,7 +96,7 @@
                 <div class="col-md-6 mb-6">
                   <label for="cc-expiration">Expiration</label>
                   <div class="row">
-                  <div class="col-md-6 mb-6" style="padding-right: 6px">
+                  <div class="col-6 mb-6" style="padding-right: 6px">
                     <select class="custom-select d-block w-100" id="cc-expiration-month" data-descrip="Exp month" data-threeds="month" placeholder="" required>
                         <option value=""></option>
                         <option value="01">January</option>
@@ -113,7 +113,7 @@
                         <option value="12">December</option>
                     </select>
                   </div>
-                  <div class="col-md-6 mb-6" style="padding-left: 6px">
+                  <div class="col-6 mb-6" style="padding-left: 6px">
                     <select class="custom-select d-block w-100" id="cc-expiration-year" data-descrip="Exp year" data-threeds="year" placeholder="" required>
                         <option value=""> </option>
                         <option value="18"> 2018</option>
